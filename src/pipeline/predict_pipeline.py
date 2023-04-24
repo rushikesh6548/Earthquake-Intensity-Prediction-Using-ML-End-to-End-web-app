@@ -8,7 +8,7 @@ from src import logger
 from src.exception import CustomException
 from src.logger import logging
 
-class PredictPipelinelaptop():
+class PredictPipeline():
     def __init__(self,features):
 
         self.features = features
@@ -23,12 +23,12 @@ class PredictPipelinelaptop():
 
         print(self.features)
 
-        with open(r"src/components/artifact/transformation.pkl","rb") as f:
+        with open(r"src/components/artifacts/transformation.pkl","rb") as f:
             transformation_object = pickle.load(f)
 
 
 
-        with open(r"src/components/artifact/trained_model.pkl","rb") as f:
+        with open(r"src/components/artifacts/trained_model.pkl","rb") as f:
             model_object = pickle.load(f)
 
 
