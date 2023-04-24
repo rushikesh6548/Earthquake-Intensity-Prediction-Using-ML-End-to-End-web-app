@@ -87,13 +87,13 @@ class DataTransformation:
         def get_numeric_cat(x):
             if x <= 4.0:
                 return 0
-            if x >4.0 and x <= 6.0:
+            elif x >4.0 and x <= 6.0:
                 return 1
-            if x > 6.0 and x <= 7.0:
+            elif x > 6.0 and x <= 7.0:
                 return 2
-            if x > 7.0 and x <= 7.9:
+            elif x > 7.0 and x <= 7.9:
                 return 3
-            if x > 7.0:
+            elif x > 7.0:
                 return 4
 
         train_data_output_transformed = train_data_output_feature.apply(get_numeric_cat)
