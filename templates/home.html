@@ -50,7 +50,7 @@
    <body>
       <nav class="navbar navbar-expand-lg">
          <div class="container">
-            <<a class="navbar-brand" href="#">Earthquake Prediction App</a>>
+            <<a class="navbar-brand" href="#">Earthquake Intensity Prediction App</a>>
             <div class="ml-auto">
                <a href="https://github.com/rushikesh6548/Earthquake-Intensity-and-chances-prediction-End-to-End-web-app" class="github-link" class="btn" style="margin-right: 10px;">Github</a>
                <a href="https://earthquake.usgs.gov/fdsnws/event/1/query" class="github-link">API</a>
@@ -83,11 +83,11 @@
                      <input type="number" step="0.00000000001" name="longitude" id="longitude" class="form-control" required>
                   </div>
                   <div class="form-group">
-                     <label for="dmin">Dmin: Enter the shortest distance from the epicenter to the nearest point on the earthquake's rupture plane</label>
-                     <input type="number" step="0.00000000001" name="dmin" id="dmin" class="form-control" required>
+                     <label for="nst">NST: Number of Seismic stations into consideration</label>
+                     <input type="number" step="0.00000000001" name="dmin" id="nst" class="form-control" required>
                   </div>
                   <div class="form-group">
-                     <label for="gap">Gap:Enter the azimuthal gap[Distance of a nearest seismic station]</label>
+                     <label for="gap">Gap:Largest distance between Two seismic Stations around the location in degrees</label>
                      <input type="number" step="0.00000000001" name="gap" id="gap" class="form-control" required>
                   </div>
                   <div class="form-group">

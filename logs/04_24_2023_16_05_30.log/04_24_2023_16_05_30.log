@@ -1,0 +1,9 @@
+[ 2023-04-24 16:05:30,008 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-24 16:05:30,013 ] 224 werkzeug - INFO -  * Debugger PIN: 119-758-130
+[ 2023-04-24 16:05:32,066 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:05:32] "GET /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 16:05:32,135 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:05:32] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 16:06:44,278 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:06:44] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 16:06:44,307 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:06:44] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 16:08:53,671 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:08:53] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 16:08:53,697 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 16:08:53] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 16:11:31,131 ] 224 werkzeug - INFO -  * Detected change in 'E:\\TUTS (Code)\\Python\\Project\\new\\app.py', reloading

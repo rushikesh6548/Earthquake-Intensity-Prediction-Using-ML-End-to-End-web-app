@@ -42,7 +42,7 @@ class DataTransformation:
         # Making preprocessor object :
         # We standardize the numerical columns
 
-        numerical_col_names = ['latitude','longitude','gap','dmin','quarter_of_year','month_of_year','day_of_month']
+        numerical_col_names = ['latitude','longitude','nst','nst','quarter_of_year','month_of_year','day_of_month']
 
 
         transformation = ColumnTransformer(transformers=[

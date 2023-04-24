@@ -1,0 +1,3 @@
+[ 2023-04-24 12:05:40,269 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-24 12:05:40,274 ] 224 werkzeug - INFO -  * Debugger PIN: 119-758-130
+[ 2023-04-24 12:05:51,103 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 12:05:51] "[33mPOST /predict HTTP/1.1[0m" 404 -

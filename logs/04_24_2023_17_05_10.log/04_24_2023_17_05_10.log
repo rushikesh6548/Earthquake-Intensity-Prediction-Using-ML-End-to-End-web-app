@@ -1,0 +1,10 @@
+[ 2023-04-24 17:05:10,243 ] 224 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-24 17:05:10,247 ] 224 werkzeug - INFO -  * Debugger PIN: 119-758-130
+[ 2023-04-24 17:09:40,319 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:09:40] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 17:09:40,390 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:09:40] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 17:10:41,856 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:10:41] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 17:10:41,882 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:10:41] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 17:12:42,088 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:12:42] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 17:12:42,118 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:12:42] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -
+[ 2023-04-24 17:12:52,567 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:12:52] "POST /predictdata HTTP/1.1" 200 -
+[ 2023-04-24 17:12:52,592 ] 224 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2023 17:12:52] "[36mGET /static/download.jpg HTTP/1.1[0m" 304 -

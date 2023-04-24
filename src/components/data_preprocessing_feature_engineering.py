@@ -35,7 +35,7 @@ class DataPreprocessing:
 
         # As from Performing EDA we know we will only keep the following features and perform feature engineering based on insights
 
-        raw_data_df = raw_data_df[['time','latitude','longitude','gap','dmin','mag']]
+        raw_data_df = raw_data_df[['time','latitude','longitude','gap','nst','mag']]
 
         print(raw_data_df)
         # here, Knn imputer can be applied
@@ -43,35 +43,30 @@ class DataPreprocessing:
         raw_data_df['latitude'] = raw_data_df['latitude'].astype(dtype='float64')
         raw_data_df['longitude'] = raw_data_df['longitude'].astype(dtype='float64')
         raw_data_df['gap'] = raw_data_df['gap'].astype(dtype='float64')
-        raw_data_df['dmin'] = raw_data_df['dmin'].astype(dtype='float64')
+        raw_data_df['nst'] = raw_data_df['nst'].astype(dtype='float64')
         raw_data_df['mag'] = raw_data_df['mag'].astype(dtype='float64')
 
-        temp_df = raw_data_df[['latitude','longitude','gap','dmin','mag']]
+        temp_df = raw_data_df[['latitude','longitude','gap','nst','mag']]
 
         knn = KNNImputer(n_neighbors=50)
 
 
 
 
-        print(f"Temp df : \n {temp_df}")
-
 
 
         temp_df_imputed = knn.fit_transform(temp_df)
 
 
-        print(f"Temp df imputed : {temp_df_imputed}")
-
 
 
 
         self.raw_data_imputed_df = temp_df_imputed
-        self.raw_data_imputed_df = pd.DataFrame(self.raw_data_imputed_df, columns=['latitude','longitude','gap','dmin','mag'])
+        self.raw_data_imputed_df = pd.DataFrame(self.raw_data_imputed_df, columns=['latitude','longitude','gap','nst','mag'])
 
         self.raw_data_imputed_df.insert(0,'time',raw_data_df['time'])
 
 
-        print(self.raw_data_imputed_df)
 
 
 
@@ -109,7 +104,7 @@ class DataPreprocessing:
         self.final_ready_data_df['day_of_month'] = self.raw_data_imputed_df['time'].apply(get_day_of_month)
 
 
-        final_data_save_path = os.path.join('artifacts','final_data2.csv')
+        final_data_save_path = os.path.join('artifacts','final_data.csv')
         self.final_ready_data_df.to_csv(final_data_save_path,header=True , encoding='utf-8')
 
         print(self.final_ready_data_df.head(100))
