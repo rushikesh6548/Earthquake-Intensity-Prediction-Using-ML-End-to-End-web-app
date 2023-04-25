@@ -52,7 +52,7 @@ def predict_datapoint():
         result = pipeline_obj.predict()
         result = result[0]
 
-        print(result[0])
+
 
         result_str = None
         if result <= 4.0:
@@ -77,4 +77,4 @@ def predict_datapoint():
 
 
 if __name__ == '__main__':
-    application.run(host = "0.0.0.0",port = 8080)
+    application.run(host = "0.0.0.0",port = 8080,debug=True)
