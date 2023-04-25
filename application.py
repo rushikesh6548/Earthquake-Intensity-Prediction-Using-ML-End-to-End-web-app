@@ -3,14 +3,14 @@ from flask import Flask,render_template,request,redirect,session
 from src.pipeline.predict_pipeline import PredictPipeline
 
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 
 
 # Route for home page :
 
-@app.route('/')
-@app.route('/predictdata',methods = ['GET','POST'])
+@application.route('/')
+@application.route('/predictdata',methods = ['GET','POST'])
 def predict_datapoint():
     if request.method == "GET":
         return render_template("home.html",title = "Home")
@@ -77,4 +77,4 @@ def predict_datapoint():
 
 
 if __name__ == '__main__':
-    app.run(host = "0.0.0.0",debug=True)
+    application.run(host = "0.0.0.0",port = 8080)
