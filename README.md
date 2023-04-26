@@ -1,6 +1,7 @@
 # End to End Earthquake Intensity Prediction using Machine Learning
 
 This is an end-to-end machine learning project for predicting the intensity of earthquakes based on historic data. A preview of our app : 
+You can try the app yourself here : http://43.205.139.197:8080/
 ![image](https://user-images.githubusercontent.com/46419407/234553010-ec6b689c-49ff-4816-ba98-1d02ee7f4db1.png)
 
 ![image](https://user-images.githubusercontent.com/46419407/234553044-4e38ec40-ca0f-48b5-a497-97653290490a.png)
