@@ -37,4 +37,15 @@ After the raw data was preprocessed and feature engineering was applied, a trans
 After the preprocessed data was ingested and transformed, classification models were evaluated on the data, and the best model was selected based on its weighted F1 score. The best model on the basis of weighted f1 score came out to be `CatBoost Regressor`. The trained model was saved in a pickle file as `model_trained.pkl`.
 
 ### App Deployment
-After the model was trained, a Flask app was created with the necessary templates. The app was then deployed on a server so that it could be accessed by users.```
+After the model was trained, a Flask app was created with the necessary templates
+Deployment Steps : 
+
+Creating a workflow on Github Actions with Amazon EC2 , ECR . You can see the 'aws.yaml' file.
+
+Creating a Runner so that it constanstly listens to jobs
+
+Enabling Continuos Integration , Continuous Delivery and Continous Deployment . 
+
+The complete flow of the process : 
+![Flowchart-Earthquake](https://user-images.githubusercontent.com/46419407/234585952-e5eacbf6-ae5b-49c1-bd99-a4a8e0f0a00b.jpeg)
+
