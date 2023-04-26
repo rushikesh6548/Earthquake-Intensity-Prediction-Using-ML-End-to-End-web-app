@@ -1,0 +1,32 @@
+# End to End Earthquake Intensity Prediction using Machine Learning
+
+This is an end-to-end machine learning project for predicting the intensity of earthquakes based on historic data
+
+## Data Collection
+
+The data used for this project was collected from the [USGS Earthquake Hazards Program API](https://www.usgs.gov/programs/earthquake-hazards). We have considered the past 15 years of earthquakes that have occurred for our analysis.
+
+## Data Preprocessing and Feature Engineering
+- Latitude
+- Longitude
+- NST (Number of Stations)
+- Gap
+- Quarter of year
+- Month of year
+- Day of month
+
+The above features were selected based on domain knowledge and their potential relevance to the earthquake intensity prediction task. Exploratory Data Analysis (EDA) was performed to gain insights into the data and identify any data quality issues that needed to be addressed.
+After data collection, the raw data was preprocessed by performing exploratory data analysis (EDA) and feature engineering. The main input features are latitude, longitude, NST, Gap, quarter of year, month of year, and day of month.
+
+## Data Ingestion
+
+The preprocessed data was read.
+
+### Data Transformation
+After the raw data was preprocessed and feature engineering was applied, a transformation object was created using `StandardScaler` to scale the input features, which were `Latitude`, `Longitude`, `NST`, `Gap`, `Quarter of year`, `Month of year`, and `day of month`. Additionally, we created categories on the magnitude of the earthquakes so that we could classify them. These transformations were saved as a pickle file named `transformation.pkl`, which was later applied to the data during model inference.
+
+### Model Training
+After the preprocessed data was ingested and transformed, classification models were evaluated on the data, and the best model was selected based on its weighted F1 score. The best model on the basis of weighted f1 score came out to be `CatBoost Regressor`. The trained model was saved in a pickle file as `model_trained.pkl`.
+
+### App Deployment
+After the model was trained, a Flask app was created with the necessary templates. The app was then deployed on a server so that it could be accessed by users.```
